@@ -2,9 +2,10 @@ import java.util.*;
 
 public class EvidencijaPolaznika {
 
+    private static Set<Polaznik> polaznici = new HashSet<>();
+
     public static void main(String[] args) {
 
-        HashSet<Polaznik> polaznici = new HashSet<>();
         Scanner skener = new Scanner(System.in);
         String nastavi;
 

@@ -38,8 +38,12 @@ public class Polaznik implements Comparable<Polaznik> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Polaznik)) return false;
+        if (this == o){
+            return true;
+        }
+        if (!(o instanceof Polaznik)){
+            return false;
+        }
         Polaznik polaznik = (Polaznik) o;
         return email.equalsIgnoreCase(polaznik.email);
     }
